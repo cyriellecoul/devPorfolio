@@ -1,0 +1,23 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "project1",
+      "description": "E-commerce Platform Project",
+      "imageUrl": "https://picsum.photos/seed/project1/800/600",
+      "imageHint": "ecommerce website dashboard"
+    },
+    {
+      "id": "project2",
+      "description": "AI Analytics Dashboard",
+      "imageUrl": "https://picsum.photos/seed/project2/800/600",
+      "imageHint": "data visualization dashboard"
+    },
+    {
+      "id": "project3",
+      "description": "Sustainable Tech App",
+      "imageUrl": "https://picsum.photos/seed/project3/800/600",
+      "imageHint": "mobile app green technology"
+    }
+  ]
+}

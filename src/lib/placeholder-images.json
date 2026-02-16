@@ -1,0 +1,10 @@
+{
+  "placeholderImages": [
+    {
+      "id": "profile",
+      "description": "Profile image placeholder",
+      "imageUrl": "/profile-image.png",
+      "imageHint": "A placeholder image for the profile picture, featuring a simple silhouette of a person on a neutral background."
+    }
+  ]
+}
