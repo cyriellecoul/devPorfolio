@@ -8,17 +8,11 @@ import { Menu, X, Code2, Moon, Sun, Languages } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useAppContext } from "@/context/app-context";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 export function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const { t, theme, toggleTheme, lang, setLang } = useAppContext();
+  const { t, theme, toggleTheme, lang, toggleLang } = useAppContext();
 
   const navLinks = [
     { name: t.nav.home, href: "/" },
@@ -63,24 +57,16 @@ export function Navbar() {
             >
               {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </Button>
-
-            {/* Language Switcher */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon" className="rounded-full text-muted-foreground hover:text-primary">
-                  <Languages className="w-5 h-5" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={() => setLang('en')} className={cn(lang === 'en' && "bg-muted font-bold")}>
-                  English
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLang('fr')} className={cn(lang === 'fr' && "bg-muted font-bold")}>
-                  Français
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-
+              {/* Language Switcher */}
+              <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleLang}
+              className="rounded-full text-muted-foreground hover:text-primary"
+                title={lang === 'fr' ? 'English' : 'Français'}
+              aria-label={lang === 'fr' ? "Changer la langue en anglais" : "Change language to French"}
+            >
+             {lang === 'fr' ? 'EN' : 'FR'}</Button>
             <Button asChild className="bg-primary hover:bg-primary/90 ml-2">
               <Link href="/contact">{t.nav.contact}</Link>
             </Button>
@@ -125,8 +111,8 @@ export function Navbar() {
             ))}
             <div className="flex items-center justify-between border-t pt-4 mt-2">
                <div className="flex gap-4">
-                  <Button variant="outline" size="sm" onClick={() => setLang('en')} className={cn(lang === 'en' && "border-primary text-primary")}>EN</Button>
-                  <Button variant="outline" size="sm" onClick={() => setLang('fr')} className={cn(lang === 'fr' && "border-primary text-primary")}>FR</Button>
+                  <Button variant="outline" size="sm" onClick={toggleLang} className={cn(lang === 'en' && "border-primary text-primary")}>EN</Button>
+                  <Button variant="outline" size="sm" onClick={toggleLang} className={cn(lang === 'fr' && "border-primary text-primary")}>FR</Button>
                </div>
                <Button asChild size="sm" className="bg-primary">
                   <Link href="/contact" onClick={() => setIsOpen(false)}>{t.nav.contact}</Link>

@@ -4,25 +4,25 @@
       "id": "profile",
       "description": "Profile image placeholder",
       "imageUrl": "/profile-image.png",
-      "imageHint": "A placeholder image for the profile picture, featuring a simple silhouette of a person on a neutral background."
+      "imageHint": "A placeholder image for the profile picture"
     },
     {
       "id": "project1",
       "description": "Project 1 image placeholder",
       "imageUrl": "/mTransport_app_bleu.webp",
-      "imageHint": "A placeholder image for project 1, featuring a simple abstract design on a neutral background."
+      "imageHint": "A placeholder image for project 1"
     },
     {
       "id": "project2",
       "description": "Project 2 image placeholder",
       "imageUrl": "/mTransport_app_vert.webp",
-      "imageHint": "A placeholder image for project 2, featuring a simple abstract design on a neutral background."
+      "imageHint": "A placeholder image for project 2"
     },
     {
       "id": "project3",
       "description": "Project 3 image placeholder",
       "imageUrl": "/mTransport_app_orange.webp",
-      "imageHint": "A placeholder image for project 3, featuring a simple abstract design on a neutral background."
+      "imageHint": "A placeholder image for project 3"
     }
   ]
 }

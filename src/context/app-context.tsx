@@ -10,7 +10,7 @@ interface AppContextType {
   theme: Theme;
   toggleTheme: () => void;
   lang: Language;
-  setLang: (lang: Language) => void;
+  toggleLang: () => void;
   t: typeof translations.en;
 }
 
@@ -18,7 +18,7 @@ const AppContext = createContext<AppContextType | undefined>(undefined);
 
 export function AppContextProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>('dark');
-  const [lang, setLang] = useState<Language>('en');
+  const [lang, setLang] = useState<Language>('fr');
 
   // Load preferences from localStorage on mount
   useEffect(() => {
@@ -27,9 +27,12 @@ export function AppContextProvider({ children }: { children: React.ReactNode }) 
     
     if (savedTheme) {
       setTheme(savedTheme);
+      setLang(savedLang);
     } else {
       // Default to dark if no preference
       setTheme('dark');
+     // Default to French if no preference
+      setLang('fr');
     }
     
     if (savedLang) setLang(savedLang);
@@ -51,8 +54,10 @@ export function AppContextProvider({ children }: { children: React.ReactNode }) 
 
   const t = translations[lang];
 
+  const toggleLang = () => setLang(prev => prev === 'fr' ? 'en' : 'fr');
+
   return (
-    <AppContext.Provider value={{ theme, toggleTheme, lang, setLang, t }}>
+    <AppContext.Provider value={{ theme, toggleTheme, lang, toggleLang, t }}>
       {children}
     </AppContext.Provider>
   );

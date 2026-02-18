@@ -11,7 +11,7 @@
         "Android SDK",
         "Node.js"
       ],
-      "live": "https://mphase.ca/",
+      "live": "https://www.mtransport.ca/",
       "github": "",
       "android": "https://play.google.com/store/apps/details?id=ca.mphase.mtransport_driver&pcampaignid=web_share",
       "ios": "https://apps.apple.com/ca/app/mtransport-driver/id1273216576"
@@ -27,14 +27,14 @@
         "Android",
         "Node.js"
       ],
-      "live": "https://github.com/cyriellecoul/portfolio2025",
+      "live": "https://www.mtransport.ca/fr/avantages",
       "github": "",
       "android": "https://play.google.com/store/apps/details?id=ca.mphase.mtransport&pcampaignid=web_share",
       "ios": "https://apps.apple.com/ca/app/mtransport-parent/id1152483902"
     },
     {
       "tags": [
-        "Angular",
+        "AngularJS",
         "Javascript",
         "HTML",
         "CSS",

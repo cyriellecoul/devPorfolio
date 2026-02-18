@@ -25,7 +25,7 @@ export const translations = {
       languagesWeb: "AngularJS, JavaScript, HTML, CSS, TypeScript, React",
       languagesMobileTitle: "MOBILE: ",
       languagesMobile: "Android (Java), iOS (Objective-C), React Native",
-      viewWork: "View My Work",
+      viewWork: "Learn more",
       getInTouch: "Get in Touch"
     },
     features: {
@@ -54,15 +54,15 @@ export const translations = {
       project1title: "mTransport - Driver Application",
       project2title: "mTransport - Parent Application",
       project3title: "mTransport - Portal Web",
-      project1desc1: "An other portfolio built with Bootstrap 5, created without artificial intelligence (or almost!)",
-      project1desc2: "A responsive and accessible portfolio built with React and TypeScript.",
-      project1desc3: "A modern portfolio showcasing my work in web development and design.",
-      project2desc1: "Application native utilisant Java pour Android et Objective-C pour iOS.",
-      project2desc2: "Ces dernières années, plusieurs fonctionnalités majeures ont été ajoutées :",
-      project2desc3: "Application native utilisant Java pour Android et Objective-C pour iOS.",
-      project3desc1: "A productivity tool that uses AI to prioritize daily tasks based on user behavior patterns.",
-      project3desc2: "An AI-powered productivity tool that helps users prioritize their daily tasks based on their behavior patterns.",
-      project3desc3: "An innovative productivity tool leveraging AI to optimize task prioritization based on user behavior patterns."
+      project1desc1: "This application, developed natively using Java for Android and Objective-C for iOS, is a valuable tool for school bus drivers to determine the correct route, locate scheduled stops along a route, and check the presence of students (expected, absent, or already on board).",
+      project1desc2: "In last years, several major features have been added:",
+      project1desc3: "Communication module, Internal forms (Discipline and technical forms), Automatic departures and arrivals, Preview of future routes, UI and UX improvements, Display of recent route changes, etc...",
+      project2desc1: "Initially developed natively and then last year using React Native, this application allows parents to track their children's journeys, receive real-time notifications, and access information on routes and schedules.",
+      project2desc2: "Thanks to this experience, I was able to build a foundation to continue improving my technical skills and gain autonomy in this language. Features developed:",
+      project2desc3: "UI & UX of the login process, UI & UX of the Home page, UI & UX of reporting/cancelling a student's absence, UI & UX of the Settings page with checkbox logic.",
+      project3desc1: "Transport - Web Portal is a complete platform that combines AngularJS, HTML, CSS and Javascript.",
+      project3desc2: "This website includes many tools that allow dispatchers to track the vehicle fleet in real time on a map. It facilitates, among other things, route planning and driver assignment. I enjoy having skills in different software programs. Working on the portal is part of this desire to diversify my knowledge. Major features developed:",
+      project3desc3: "Improvements and new tools on the map (Google Maps API), Adding new information reports (PDF and CSV), Creating a user-friendly FAQ, Implementing logic based on API requests from the server (I like using Ngrok for a clear data visualization)."
     },
     skills: {
       title: "Technical Skills",
@@ -116,7 +116,7 @@ export const translations = {
       languagesWeb: "AngularJS, JavaScript, HTML, CSS, TypeScript, React",
       languagesMobileTitle: "MOBILE : ",
       languagesMobile: "Android (Java), iOS (Objective-C), React Native",
-      viewWork: "Voir mon travail",
+      viewWork: "En savoir plus",
       getInTouch: "Me contacter"
     },
     features: {
@@ -152,9 +152,9 @@ export const translations = {
       project2desc1: "Développée à la base en native puis l'année passée en React Native, cette application permet aux parents de suivre les trajets de leurs enfants, de recevoir des notifications en temps réel et d'accéder à des informations sur les itinéraires et les horaires.",
       project2desc2: "Grâce à cette expérience, j'ai pu me construire des bases pour continuer à m'améliorer techniquement et gagner en autonomie sur ce langage. Fonctionnalités développées :",
       project2desc3: "UI & UX du processus de connexion, UI & UX Accueil, UI & UX Déclarer/Annuler l'absence d'un·d'une élève, UI & UX de la page Paramètres avec la logique des checkbox.",
-      project3desc1: "Transport - Portail Web est une plateforme complète qui associe AnjularJS, HTML, CSS et Javascript.",
+      project3desc1: "Transport - Portail Web est une plateforme complète qui associe AngularJS, HTML, CSS et Javascript.",
       project3desc2: "Ce site web comprend beaucoup d’outils permettant aux répartiteur·rice·s de pouvoir suivre en temps réel la flotte automobile sur une carte. Elle facilite, entre autres, la planification des trajets et l’affectation des conducteur·rice·s. J'aime avoir des compétences dans différents logiciels. Travailler sur le portail fait partie de cette envie de diversifier mes connaissances. Fonctionnalités majeures développées :",
-      project3desc3: "Nouvelles améliorations sur la carte. (API de Google Map), Ajouter de nouveaux rapports d'information. (PDF et CSV), Créer une FAQ adaptable en fonction des utilisateurs, Implémenter des logiques en fonction des requêtes API venant du serveur (J'aime utiliser Ngrok pour avoir un visuel clair)."
+      project3desc3: "Améliorations et nouveaux outils sur la carte. (API de Google Map), Ajouter de nouveaux rapports d'information. (PDF et CSV), Créer une FAQ adaptable en fonction des utilisateurs, Implémenter des logiques en fonction des requêtes API venant du serveur (J'aime utiliser Ngrok pour avoir un visuel clair des données transmisses)."
     },
     skills: {
       title: "Compétences Techniques",

@@ -9,6 +9,7 @@ import { useAppContext } from "@/context/app-context";
 
 export default function AboutPage() {
   const { t } = useAppContext();
+  const basePath = process.env.NODE_ENV === 'development' ? '' : '/devPortfolio';
   const profileImg = PlaceHolderImages.find(img => img.id === "profile")?.imageUrl || "";
 
   return (
@@ -17,12 +18,13 @@ export default function AboutPage() {
         <div className="relative">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl z-10 border-8 border-white w-[300px] h-[350px] mx-auto flex items-center justify-center">
             <Image
-              src={profileImg}
+              src={`${basePath}${profileImg}`}
               alt="Profile Portrait"
               fill
               className="object-cover"
               data-scroll-behavior="smooth"
               priority
+              onContextMenu={(e) => e.preventDefault()}
             />
           </div>
           <div className="absolute -top-10 -left-10 w-36 h-36 bg-secondary/20 rounded-full blur-3xl" />
