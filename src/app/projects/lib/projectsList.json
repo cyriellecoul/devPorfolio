@@ -1,25 +1,22 @@
 {
-    "projetsList":[
+    "projectsList":[
   {
-    "title": "Bootstrap Portfolio",
+
    
-    "image": "",
+
     "tags": ["React", "TypeScript", "Tailwind", "D3.js"],
     "live": "https://example.com",
     "github": "https://github.com"
   },
   {
-    "title": "Lumina E-Commerce",
    
-    "image": "",
-    "tags": ["Next.js", "Shopify", "Stripe", "Framer Motion"],
+
+    "tags": ["Objective-C", "Xcode", "iOS"],
     "live": "https://example.com",
     "github": "https://github.com"
   },
   {
-    "title": "NeuroFlow Task Manager",
-   
-    "image": "PlaceHolderImages.find(img => img.id === \"project3\")?.imageUrl || \"\"",
+    
     "tags": ["React Native", "Firebase", "GenAI", "Node.js"],
     "live": "https://example.com",
     "github": "https://github.com"

@@ -52,9 +52,18 @@ export const translations = {
       title: "Projects",
       description: "Key projects contributed to throughout my professional experience.",
       caseStudy: "Case Study",
-      project1desc: "An other portfolio built with Bootstrap 5, created without artificial intelligence (or almost!)",
-      project2desc: "High-performance headless commerce storefront built with Next.js and Shopify Hydrogen.",
-      project3desc: "A productivity tool that uses AI to prioritize daily tasks based on user behavior patterns."
+      project1title: "Bootstrap 5",
+      project2title: "mTransport - Driver Application",
+      project3title: "Projet 3",
+      project1desc1: "An other portfolio built with Bootstrap 5, created without artificial intelligence (or almost!)",
+      project1desc2: "A responsive and accessible portfolio built with React and TypeScript.",
+      project1desc3: "A modern portfolio showcasing my work in web development and design.",
+      project2desc1: "Application native utilisant Java pour Android et Objective-C pour iOS.",
+      project2desc2: "Ces dernières années, plusieurs fonctionnalités majeures ont été ajoutées :",
+      project2desc3: "Application native utilisant Java pour Android et Objective-C pour iOS.",     
+       project3desc1: "A productivity tool that uses AI to prioritize daily tasks based on user behavior patterns.",
+      project3desc2: "An AI-powered productivity tool that helps users prioritize their daily tasks based on their behavior patterns.",
+      project3desc3: "An innovative productivity tool leveraging AI to optimize task prioritization based on user behavior patterns."
     },
     skills: {
       title: "Technical Skills",
@@ -131,15 +140,23 @@ export const translations = {
       p1: "Mon parcours est atypique, marqué par des expériences dans plusieurs secteurs avant de me tourner vers la programmation. J’ai choisi ce domaine pour sa diversité, ses nombreuses perspectives d’évolution et l’autonomie qu’il permet.",
       p2: "Le partage de connaissances et d’idées est au cœur de ma démarche. Forte de compétences en plusieurs langages de programmation, d’un solide esprit d’équipe et d’une volonté constante de progresser, je suis convaincue de pouvoir devenir rapidement un atout polyvalent pour votre équipe.",
       p3: "Je suis une personne empathique et sociable. Ce qui m’épanouit dans le développement, c’est la concrétisation progressive d’une application et la reconnaissance des utilisateur·rice·s à travers leurs retours.",
-      
     },
     projects: {
       title: "Projets",
       description: "Principaux projets auxquels j’ai contribué au cours de mon parcours professionnel.",
       caseStudy: "Étude de Cas",
-      project1desc: "Un autre portfolio construit avec Bootstrap 5, créé sans intelligence artificielle (ou presque !)",
-      project2desc: "High-performance headless commerce storefront built with Next.js and Shopify Hydrogen.",
-      project3desc: "A productivity tool that uses AI to prioritize daily tasks based on user behavior patterns."
+        project1title: "Bootstrap 5",
+      project2title: "mTransport - Application Conducteur",
+      project3title: "Projet 3",
+      project1desc1: "Un autre portfolio construit avec Bootstrap 5, créé sans intelligence artificielle (ou presque !)",
+      project1desc2: "Un autre portfolio construit avec Bootstrap 5, créé sans intelligence artificielle (ou presque !)",
+      project1desc3: "Un autre portfolio construit avec Bootstrap 5, créé sans intelligence artificielle (ou presque !)",
+      project2desc1: "Application native utilisant Java pour Android et Objective-C pour iOS.",
+      project2desc2: "Ces dernières années, plusieurs fonctionnalités majeures ont été ajoutées :",
+ project2desc3: "Module communication, Formulaires internes (Formulaire discipline et technique), Départs et arrivées automatiques, Aperçu des trajets futurs, Améliorations du UI et UX, Affichage des modifications récentes sur les itinéraires etc...",     
+  project3desc1: "A productivity tool that uses AI to prioritize daily tasks based on user behavior patterns.",
+      project3desc2: "A productivity tool that uses AI to prioritize daily tasks based on user behavior patterns.",
+      project3desc3: "A productivity tool that uses AI to prioritize daily tasks based on user behavior patterns."
     },
     skills: {
       title: "Compétences Techniques",

@@ -8,38 +8,13 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { useAppContext } from "@/context/app-context";
-//import projectsList from "./lib/projectsList.json";
+import { projectsList } from "./lib/projectsList.json";
 
-const projectsList = [
-  {
-    title: "Bootstrap Portfolio",
 
-    image: PlaceHolderImages.find(img => img.id === "project1")?.imageUrl || "",
-    tags: ["React", "TypeScript", "Tailwind", "D3.js"],
-    live: "https://example.com",
-    github: "https://github.com"
-  },
-  {
-    title: "Lumina E-Commerce",
-   
-    image: PlaceHolderImages.find(img => img.id === "project2")?.imageUrl || "",
-    tags: ["Next.js", "Shopify", "Stripe", "Framer Motion"],
-    live: "https://example.com",
-    github: "https://github.com"
-  },
-  {
-    title: "NeuroFlow Task Manager",
-   
-    image: PlaceHolderImages.find(img => img.id === "project3")?.imageUrl || "",
-    tags: ["React Native", "Firebase", "GenAI", "Node.js"],
-    live: "https://example.com",
-    github: "https://github.com"
-  }
-];
 
 export default function ProjectsPage() {
   const { t } = useAppContext();
-
+  const profileImg = PlaceHolderImages.find(img => img.id === "profile")?.imageUrl || "";
   return (
     <div className="container mx-auto px-4 py-20">
       <div className="text-center mb-16 max-w-2xl mx-auto">
@@ -54,8 +29,8 @@ export default function ProjectsPage() {
           <Card key={i} className="group overflow-hidden border bg-card hover:shadow-xl transition-all duration-300">
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src={project.image}
-                alt= {t.projects[`project${i + 1}desc` as keyof typeof t.projects]}
+                src={profileImg}
+                alt={t.projects[`project${i + 1}desc${i + 1}` as keyof typeof t.projects]}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 data-ai-hint="project showcase"
@@ -71,12 +46,23 @@ export default function ProjectsPage() {
             </div>
             <CardHeader className="pb-2">
               <CardTitle className="font-headline text-2xl font-bold text-primary group-hover:text-secondary transition-colors">
-                {project.title}
+                {t.projects[`project${i + 1}title` as keyof typeof t.projects]}
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-muted-foreground text-sm line-clamp-3 mb-4">
-                {t.projects[`project${i + 1}desc` as keyof typeof t.projects]}
+              <CardDescription className="text-muted-foreground text-sm  mb-4">
+                {t.projects[`project${i + 1}desc1` as keyof typeof t.projects]} <br />
+                {t.projects[`project${i + 1}desc2` as keyof typeof t.projects]} <br />
+                {/* desc3 as bullet list */}
+                {t.projects[`project${i + 1}desc3` as keyof typeof t.projects] && (
+                  <ul className="list-disc list-inside mt-2">
+                    {t.projects[`project${i + 1}desc3` as keyof typeof t.projects]
+                      .split(',')
+                      .map((part, idx) => (
+                        <li key={idx}>{part.trim()}</li>
+                      ))}
+                  </ul>
+                )}
               </CardDescription>
               <div className="flex flex-wrap gap-2">
                 {project.tags.map(tag => (

@@ -5,6 +5,24 @@
       "description": "Profile image placeholder",
       "imageUrl": "/profile-image.png",
       "imageHint": "A placeholder image for the profile picture, featuring a simple silhouette of a person on a neutral background."
+    },
+      {
+      "id": "mtransport_driver_app",
+      "description": "Profile image placeholder",
+      "imageUrl": "/mtransport-driver-app.png",
+      "imageHint": "A placeholder image for the mtransport driver app, featuring a simple silhouette of a person on a neutral background."
+    },
+      {
+      "id": "mtransport_parent_app",
+      "description": "Profile image placeholder",
+      "imageUrl": "/mtransport-parent-app.png",
+      "imageHint": "A placeholder image for the mtransport parent app, featuring a simple silhouette of a person on a neutral background."
+    },
+      {
+      "id": "mtransport_portal",
+      "description": "Profile image placeholder",
+      "imageUrl": "/mtransport-portal.png",
+      "imageHint": "A placeholder image for the mtransport portal, featuring a simple silhouette of a person on a neutral background."
     }
   ]
 }
