@@ -20,6 +20,7 @@ export default function ProjectsPage() {
     ...project,
     image: PlaceHolderImages.find(img => img.id === `project${projectsData.projectsList.indexOf(project) + 1}`)?.imageUrl || ""
   }));
+  console.log("Projects List with Images:", projectsList);
 
   return (
     <div className="container mx-auto px-4 py-20">
