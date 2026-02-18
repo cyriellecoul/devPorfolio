@@ -15,19 +15,18 @@ export const metadata: Metadata = {
   openGraph: {
   title: "Portfolio de Cyrielle",
   description: "Développeuse Frontend & Mobile",
-  url: "https://cyriellecoul.github.io/TODO", // TODO: Update the URL
+  url: "https://cyriellecoul.github.io/devPortfolio/",
   siteName: "Portfolio de Cyrielle",
   images: [
     {
-      url: "https://cyriellecoul.github.io/og-image.jpg", // TODO: Update the image
-      width: 1200,
-      height: 630,
+      url: "/image_open_graph.png",
+      width: 1050,
+      height: 600,
       alt: "Portfolio de Cyrielle",
     },
   ],
   locale: "fr_FR",
   type: "website",
-
   },
 }
 
