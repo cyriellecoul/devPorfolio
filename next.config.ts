@@ -1,5 +1,4 @@
 import type { NextConfig } from 'next';
-const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -10,16 +9,9 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   output: 'export',
-  basePath: isProd ? '/devPortfolio' : '',
-  assetPrefix: isProd ? '/devPortfolio/' : '',
   images: {
     unoptimized: true
   },
-
-  env: {
-    NEXT_PUBLIC_BASE_PATH: isProd ? '/devPortfolio' : '',
-  },
-
 };
 
 export default nextConfig;

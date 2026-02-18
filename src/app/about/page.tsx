@@ -21,7 +21,8 @@ export default function AboutPage() {
               alt="Profile Portrait"
               fill
               className="object-cover"
-              data-ai-hint="developer portrait"
+              data-scroll-behavior="smooth"
+              priority
             />
           </div>
           <div className="absolute -top-10 -left-10 w-36 h-36 bg-secondary/20 rounded-full blur-3xl" />
